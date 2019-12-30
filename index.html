@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Documento</title>
+    <meta name="keywords" content="Calculadora, online, Calculador online">
+    <meta name="description" content="Esta es una calculadora para calcular">
+    <title>Calculator</title>
+    <script src="main.js"></script>
 </head>
 <body>
-    <div>JAJAJAJAJAJA</div>
-
+    <button class="numero" id="numero1" onclick="input(this)" value="1">1</button>
+    <button class="simbolo" id="simbolo+" onclick="input(this)" value="+">+</button>
+    <button class="simbolo" id="simbolo=" onclick="getResult()">=</button>
+    <div>
+        <span id="resultado"></span>
+    </div>
 </body>
 </html>
