@@ -8,11 +8,13 @@ function input(elem) {
     if(elem.className === "numero") {
         resultado.innerHTML += input;
     } else if (elem.className === "simbolo") {
-        console.log('último caracter', resultado.innerHTML.substring(resultado.length - 1, resultado.length))
-        if(resultado.innerHTML.substring(resultado.length - 1) === "+" || resultado.innerHTML === "") {
+
+        if(resultado.innerHTML.charAt(resultado.innerHTML.length - 1) === "+" || resultado.innerHTML === "") {
+            // Do nothing
         } else {
-            console.log('resultado')
+
             resultado.innerHTML += input;
+            
         }
     }
     
