@@ -1,0 +1,14 @@
+.container {
+    width: 195px;
+}
+.result_container {
+    border: 1px solid black;
+    height: 20px;
+    width: 100%;
+}
+.big_item {
+    width: 53px;
+}
+.small_item {
+    width: 24px;
+}
