@@ -7,7 +7,7 @@ function input(elem) {
         } else {
             resultado.innerHTML = input;
         }
-    } else if (elem.className === "simbolo") {
+    } else if (elem.className.includes("simbolo")) {
         if (resultado.innerHTML.charAt(resultado.innerHTML.length - 1) === "+" || resultado.innerHTML === "" || resultado.innerHTML.includes("=")) {
             // Do nothing
         } else {
