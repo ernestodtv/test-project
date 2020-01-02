@@ -10,12 +10,48 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <button class="numero" id="numero1" onclick="input(this)" value="1">1</button>
-    <button class="simbolo" id="simbolo+" onclick="input(this)" value="+">+</button>
-    <button class="simbolo" id="simbolo=" onclick="getResult()">=</button>
-    <button onclick="clearResult()">C</button>
-    <div>
-        <span id="resultado"></span>
+    <div class="container">
+        <div class="result_container">
+            <span id="resultado"></span>
+        </div>
+        <div class="content">
+            <button class="numero big_item" onclick="input(this)" value="7">7</button>
+            <button class="numero big_item" onclick="input(this)" value="8">8</button>
+            <button class="numero big_item" onclick="input(this)" value="9">9</button>
+            <button class="simbolo small_item" id="simbolo+" onclick="input(this)" value="+">+</button>
+            <br/>
+            <button class="numero big_item" onclick="input(this)" value="4">4</button>
+            <button class="numero big_item" onclick="input(this)" value="5">5</button>
+            <button class="numero big_item" onclick="input(this)" value="6">6</button>
+            <button class="simbolo small_item" id="simbolo-" onclick="input(this)" value="-">-</button>
+            <br/>
+            <button class="numero big_item" onclick="input(this)" value="1">1</button>
+            <button class="numero big_item" onclick="input(this)" value="2">2</button>
+            <button class="numero big_item" onclick="input(this)" value="3">3</button>
+            <button class="simbolo small_item" id="simbolox" onclick="input(this)" value="x">x</button>
+            <br/>
+            <button class="numero big_item" onclick="input(this)" value="3">0</button>
+            <button class="big_item" onclick="clearResult()">C</button>
+            <button class="simbolo big_item" id="simbolo=" onclick="getResult()">=</button>
+            <button class="simbolo small_item" id="simbolo/" onclick="input(this)" value="/">/</button>
+        </div>
     </div>
 </body>
 </html>
+
+<style>
+.container {
+    width: 195px;
+}
+.result_container {
+    border: 1px solid black;
+    height: 20px;
+    width: 100%;
+}
+.big_item {
+    width: 53px;
+}
+.small_item {
+    width: 24px;
+}
+</style>

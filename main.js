@@ -1,8 +1,7 @@
 function input(elem) {
     var input = elem.value;
     var resultado = document.getElementById("resultado");
-
-    if (elem.className === "numero") {
+    if (elem.className.includes("numero")) {
         if (!resultado.innerHTML.includes("=")) {
             resultado.innerHTML += input
         } else {
